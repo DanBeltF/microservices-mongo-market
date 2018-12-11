@@ -18,4 +18,7 @@ La arquitectura debe tener las siguientes características:
 10. Documente su arquitectura en el README.md
 
 ### Documentación de la arquitectura
+![](img/diagram.jpg)
 
+La arquitectura consiste en un REST API usando el framework de Springboot, que mediante anotaciones, hace las conexiones necesarias en esta MVC (model-view-controller) para que al ingresarle un dato a la vista (que usa bootstrap), esta llame a el controlador (el cual es un JavaScript que maneja mensajes JSON implementado en axios) para que se comunique con el modelo quien es que hace la consulta como tal (y el llamado al API externo de AlphaVantage).
+Se hace uso de MongoDB para persistir datos No-SQL (los JSON).
